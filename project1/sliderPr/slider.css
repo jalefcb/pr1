@@ -1,0 +1,41 @@
+
+body{
+    background-color: rgb(147, 247, 247);
+}
+
+.slide{
+    display: none;
+}
+
+.slide.active{
+    display: block;
+}
+
+#slider{
+    width: 76%;
+    position: relative;
+    margin: 20px auto;
+    box-shadow: 0 0 10px rgb(0,0,0);
+    overflow: hidden;
+}
+
+#slider img{
+    width: 100%;
+}
+
+.prev , .next{
+    color: rgb(61, 59, 59);
+    text-decoration: none;
+    position: absolute;
+    font-size: 35px;
+    top:44%;
+    cursor: pointer;
+}
+
+.prev{
+    left: 5px;
+}
+
+.next{
+    right: 5px;
+}

@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet " href="style.css">
+    </link>
+    <title>Document</title>
+</head>
+
+<body>
+
+   
+
+
+  <!--
+
+   <div class="timer">
+        <p id="minute">00</p><p>:</p><p id="second">00</p>
+    </div>
+    <input type="text" id="demo">
+    <button type="button" onclick="myFun()"> button </button>
+
+    <p id="result"></p>
+
+    <form action="mir.p" name="myForm" method="post" onsubmit="return myFunForm()">
+Name : <input type="text" name="Fname">
+<input type="submit" value="submit" >
+
+
+</form>
+  --> 
+    <h2 onclick="changeText(this)"> Jaleh </h2>
+<button onclick="setBack()"> Set Background </button>
+<br>
+<br>
+<button onclick="redBack()"> Red Background </button>
+
+
+
+
+
+
+
+    <script src="myjs1.js"></script>
+
+</body>
+
+
+   <script>
+
+
+
+
+    
+    function changeText(id){
+  id.innerHTML="Ali"
+    }
+
+    function setBack(){
+        document.body.style.backgroundColor="#011627";
+    }
+
+    function redBack(){
+        document.body.style.backgroundColor="#f95510";
+    }
+
+
+
+
+
+
+     
+    var Interval=setInterval(Timer,1000);
+
+   // function Timer(){
+        var minute=document.getElementById("minute").innerHTML;
+        var second=document.getElementById("second").innerHTML;
+    
+        if(parseInt(second)===59){
+    
+            var newMin=(parseInt(minute)+1).toString();
+    
+        if(newMin<10)
+           newMin="0"+newMin;
+
+           document.getElementById("minute").innerHTML=newMin;
+           document.getElementById("second").innerHTML="00";
+    
+        }
+
+        else{
+            var newSec=(parseInt(second)+1).toString();
+            if(newSec<10)
+            newSec="0"+newSec;
+            document.getElementById("second").innerHTML=newSec;
+
+        }
+  //  }
+  
+
+
+
+
+
+
+
+
+
+
+
+   // var users=[];
+
+    //var userName=prompt("Enter your name")
+    //var userFamily=prompt("Enter your family")
+    //var userAge=prompt("Enter your age")
+    //var userEmail=prompt("Enter your email")
+ 
+    var newUser={
+   nameS:userName,
+   familieS:userFamily,
+   ageS:userAge,
+   EmailS:userEmail
+    }
+ 
+    users.push(newUser)
+    //console.log(users)
+
+
+
+
+function myFunForm(){
+    var myNamel=document.forms["myForm"]["Fname"].value;
+
+    if(myNamel==""){
+        alert("plz fill the form");
+        return false;
+    }
+}
+
+
+
+    function myFun(){
+       var messaje=document.getElementById("result")
+       messaje.innerHTML="";
+       var input=document.getElementById("demo").value;
+
+       try{
+  if(isNaN(input)) throw "is not a number"
+       }
+       catch(error){
+      messaje.innerHTML=error
+       }
+
+
+    }
+
+
+
+
+
+    function myTime(name,family){
+        document.write(`hi,my name is ${name} ${family}`)
+    }
+
+   // setTimeout(myTime,1000,"jale","tahouri")
+
+   //var myTimer=7;
+   //var timer=setInterval(function(){
+    document.write(myTimer+"<br>")
+    myTimer--;
+
+    if(myTimer==0){
+        clearInterval(timer)
+    }
+
+   //},1000)
+
+
+
+
+
+
+
+   </script>
+
+
+
+
+</html>
