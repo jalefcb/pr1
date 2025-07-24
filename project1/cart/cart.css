@@ -1,0 +1,139 @@
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+@font-face{
+    font-family: 'myFont';
+    src: url('../Fonts/vazir-font-v18.0.0/Vazir.woff') format('woff'),
+   }
+    
+
+body{
+    font-family: myFont;
+    background: #999;
+}
+:root{
+--theme-color:#ff1756;
+}
+
+.container{
+    position: absolute;
+    top:50%;
+    left: 50%;
+  transform: translate(-50%,-50%);
+}
+
+.cart{
+    width: 320px;
+    height: 420px;
+    border-radius: 10px;
+    padding: 50px 0;
+    background: linear-gradient(to bottom, var(--theme-color) 110px,snow 110px);
+
+}
+
+.cart *{
+    text-align: center;
+    letter-spacing: 0.5px;
+    font-weight: 600;
+}
+
+.cart img{
+    display: block;
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    position: relative;
+    margin: 0 auto;
+    box-shadow: 0 0 0 5px snow;
+}
+.cart h4{
+    color: var(--theme-color);
+    font-size: 16px;
+    margin: 8px 0 5px 0;
+}
+
+.cart h5{
+    color: #454545;
+    font-size: 12px;
+    font-weight: 400;
+}
+
+.details{
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    margin-top: 30px;
+}
+
+.details h2{
+    font-weight: 400;
+
+}
+
+.details span{
+    color: var(--theme-color);
+}
+
+.buttons{
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+}
+
+.buttons button{
+    width: 130px;
+    padding: 8px 0;
+    border-radius: 25px;
+    border: 3px solid var(--theme-color);
+}
+
+.buttons button:first-child{
+    background-color: var(--theme-color);
+    color: snow;
+}
+
+.buttons button:last-child{
+background-color: transparent;
+color: var(--theme-color);
+}
+
+.themes{
+    background-color: snow;
+    padding: 20px;
+    margin-top: 40px;
+    border-radius: 10px;
+    display: flex;
+    justify-content: space-around;
+}
+.themes button{
+    width: 25px;
+    height: 25px;
+    border: 3px solid #dddddd;
+    outline: none;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.themes .btn1{
+background-color: #3498db;
+}
+
+.themes .btn2{
+    background-color: #ff1756;
+}
+
+.themes .btn3{
+    background-color: #1cb65d;
+}
+
+.themes .btn4{
+    background-color: #8e44ad;
+}
+
+.themes .btn5{
+    background-color: #f4b932;
+}

@@ -1,0 +1,6 @@
+
+Access-Control-Allow-Origin: https://domain-a.com
+Access-Control-Allow-Origin: *
+
+
+     Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil alias incidunt accusantium perferendis voluptas dignissimos quidem sapiente suscipit soluta laudantium, dolores quos voluptatem sequi vitae eveniet facilis dolore nobis voluptatibus.

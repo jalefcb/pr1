@@ -1,0 +1,148 @@
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container{
+    position: relative;
+    width: 100%;
+    min-height: 100;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background:#0062be;
+    transition: 0.5s;
+    padding: 100px;
+}
+header{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 20px 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header .logo{
+    max-width: 80%;
+
+
+}
+
+header ul{
+    position: relative;
+    display: flex;
+}
+header ul li{
+    list-style: none;
+}
+
+header ul li a{
+    text-decoration: none;
+    display: inline-block;
+    color: snow;
+    font-weight: 400;
+    margin-left: 35px;
+}
+
+.content{
+    position: relative;
+    width: 100%;
+        display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.content .textBox{
+    max-width: 60%;
+}
+
+.content .textBox h2{
+    color: snow;
+    font-size: 80px;
+    line-height: 125px;
+    text-transform: uppercase;
+    font-weight: 900;
+}
+
+.content .textBox p{
+    color: snow;
+    line-height: 30px;
+}
+
+
+.content .textBox a{
+    display: inline-block;
+    text-decoration: none;
+    text-transform: uppercase;
+    margin-top: 20px;
+    background-color: snow;
+    border-radius: 40px;
+    padding: 10px 20px;
+    font-weight: 500;
+    letter-spacing: 1.5px;
+    cursor: pointer;
+}
+
+.imgBox{
+    width: 600px;
+    margin-top: 50px;
+    padding-right: 50px;
+    display: flex;
+    justify-content: flex-end;
+}
+
+
+.imgBox img{
+    max-width: 250px;
+}
+
+.thump{
+    position: absolute;
+    left:55%;
+    bottom: 20px;
+    transform: translateX(-90%);
+    display: flex;
+}
+
+.thump li{
+    list-style: none;
+    display: inline-block;
+    cursor: pointer;
+    transition: 0.5s;
+    margin:0 5px;
+
+}
+
+.thump li img{
+    max-width: 40px;
+}
+
+.thump li:hover{
+    transform: translateY(-30px);
+}
+
+.social{
+    position: absolute;
+    top:340px;
+    right: 66px;
+    line-height: 35px;
+
+}
+
+.social li{
+    color: snow;
+    font-size: 20px;
+    list-style:none ;
+    cursor: pointer;
+}
+
+.social li:hover{
+color: rgb(83, 240, 21);
+font-size: 30px;
+}
+
